@@ -82,18 +82,19 @@ function atLeastOneNumericNumber(){
 #TO FUNCTION PASSWORD HAS EXACTLY ONE SPECIAL CHARACTER
 function specialCharacters(){
 	echo "Enter the password rule 4"
-   read specialCharacter
-   pattern="^[A-Z0-9a-z\\]{8,}"
+	read specialCharacter
+	pattern="^[A-Z0-9a-z\\]{8,}"
 
-   #TO CHECK THE PASSWORD RULE 3
-   if [[ $specialCharacter =~ $pattern ]]
-   then
-      printf "valid password"
-   else
-      printf "invalid password"
-   fi
+	#TO CHECK THE PASSWORD RULE 3
+	if [[ $specialCharacter =~ $pattern ]]
+	then
+		printf "valid password"
+	else
+		printf "invalid password"
+	fi
 
 }
+
 #TO FUNCTION CALL
 firstName
 lastName
