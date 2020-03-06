@@ -72,11 +72,11 @@ function AtLeastOneNumericNumber(){
 
 	#TO CHECK THE PASSWORD RULE 3
 	if [[ $passwordNumber =~ $pattern ]]
-   then
-      printf "valid password"
-   else
-      printf "invalid password"
-   fi
+	then
+		printf "valid password"
+	else
+		printf "invalid password"
+	fi
 }
 #TO FUNCTION CALL
 firstName
