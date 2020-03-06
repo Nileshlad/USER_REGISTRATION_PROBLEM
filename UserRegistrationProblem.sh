@@ -23,6 +23,22 @@ function lastName(){
 	firstName
 }
 
+#TO FUNCTION EMAIL
+function email(){
+	echo "Enter the email"
+	read email
+	pattern="^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+
+	#TO CHECK THE VALID AND INVALID EMAIL
+	if [[ $email =~ $pattern ]]
+	then
+		printf "valid name"
+	else
+		printf "invalid name"
+	fi
+}
+
 #TO FUNCTION CALL
 firstName
 lastName
+email
