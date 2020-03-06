@@ -1,3 +1,3 @@
 #!/bin/bash -x
 
-echo "-------------------------WELCOME USER REGISTRATION SYSTEM----------------------------"
+echo "--------------------------WELCOME USER REGISTRATION SYSTEM----------------------------"
