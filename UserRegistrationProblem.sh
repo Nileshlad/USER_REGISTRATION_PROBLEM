@@ -65,7 +65,7 @@ function passwordAtLeastOneUpperCase(){
 }
 
 #TO FUNCTION  PASSWORD AT LEAST ONE NUMERIC NUMBER
-function AtLeastOneNumericNumber(){
+function atLeastOneNumericNumber(){
 	echo "Enter the password rule 3"
 	read passwordNumber
 	pattern="^[A-Z0-9a-z]{8,}"
@@ -78,6 +78,22 @@ function AtLeastOneNumericNumber(){
 		printf "invalid password"
 	fi
 }
+
+#TO FUNCTION PASSWORD HAS EXACTLY ONE SPECIAL CHARACTER
+function specialCharacters(){
+	echo "Enter the password rule 4"
+   read specialCharacter
+   pattern="^[A-Z0-9a-z\\]{8,}"
+
+   #TO CHECK THE PASSWORD RULE 3
+   if [[ $specialCharacter =~ $pattern ]]
+   then
+      printf "valid password"
+   else
+      printf "invalid password"
+   fi
+
+}
 #TO FUNCTION CALL
 firstName
 lastName
@@ -85,4 +101,5 @@ email
 mobileNumber
 passwordCharacters
 passwordAtLeastOneUpperCase
-AtLeastOneNumericNumber
+atLeastOneNumericNumber
+specialCharacters
