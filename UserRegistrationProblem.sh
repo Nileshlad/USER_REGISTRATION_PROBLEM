@@ -6,14 +6,14 @@ echo "--------------------------WELCOME USER REGISTRATION SYSTEM----------------
 function firstName () {
 	echo "Enter the word"
 	read word
-	pattern=[a-zA-Z]{3,}
+	pattern=[a-zA-Z]{8,}
 
 	#TO CHECK THE VALID AND INVALID
 	if [[ $word =~ $pattern ]]
 	then
-		printf "valid name"
+		printf "valid word"
 	else
-		printf "invalid name"
+		printf "invalid word"
 	fi
 }
 
@@ -51,8 +51,15 @@ function mobileNumber(){
 		printf "invalid number"
 	fi
 }
+
+#TO FUNCTION PASSWORD CHARACTERS
+function passwordCharacters(){
+	echo "Enter the minimum eight characters"
+	firstName
+}
 #TO FUNCTION CALL
 firstName
 lastName
 email
 mobileNumber
+passwordCharacters
