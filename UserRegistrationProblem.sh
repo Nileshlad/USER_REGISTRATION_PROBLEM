@@ -58,10 +58,25 @@ function passwordCharacters(){
 	firstName
 }
 
-#TO FUNCTION PASSWORD AT LIST UPPER CASE
+#TO FUNCTION PASSWORD AT LEAST UPPER CASE
 function passwordAtLeastOneUpperCase(){
 	echo "Enter the password at least one upper case"
 	passwordCharacters
+}
+
+#TO FUNCTION  PASSWORD AT LEAST ONE NUMERIC NUMBER
+function AtLeastOneNumericNumber(){
+	echo "Enter the password rule 3"
+	read passwordNumber
+	pattern="^[A-Z0-9a-z]{8,}"
+
+	#TO CHECK THE PASSWORD RULE 3
+	if [[ $passwordNumber =~ $pattern ]]
+   then
+      printf "valid password"
+   else
+      printf "invalid password"
+   fi
 }
 #TO FUNCTION CALL
 firstName
@@ -70,3 +85,4 @@ email
 mobileNumber
 passwordCharacters
 passwordAtLeastOneUpperCase
+AtLeastOneNumericNumber
