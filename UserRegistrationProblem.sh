@@ -57,9 +57,16 @@ function passwordCharacters(){
 	echo "Enter the minimum eight characters"
 	firstName
 }
+
+#TO FUNCTION PASSWORD AT LIST UPPER CASE
+function passwordAtLeastOneUpperCase(){
+	echo "Enter the password at least one upper case"
+	passwordCharacters
+}
 #TO FUNCTION CALL
 firstName
 lastName
 email
 mobileNumber
 passwordCharacters
+passwordAtLeastOneUpperCase
